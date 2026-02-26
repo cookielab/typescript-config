@@ -1,0 +1,17 @@
+{
+	"$schema": "node_modules/@biomejs/biome/configuration_schema.json",
+	"extends": ["@cookielab.io/biome-config/node"],
+	"files": {
+		"includes": ["src/**/*.ts", "script/**/*.ts", "!src/generated"]
+	},
+	"linter": {
+		"rules": {
+			"correctness": {
+				"noUnresolvedImports": "off"
+			},
+			"performance": {
+			"noNamespaceImport": "off"
+			}
+		}
+	}
+}
