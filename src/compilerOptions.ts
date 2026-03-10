@@ -568,6 +568,8 @@ const languageAndEnvironmentOptions: Pick<
 	target: "esnext",
 	/**
 	 * This setting unifies the behavior from TypeScript and the final specification from TC39.
+	 *
+	 * This option may break already existing code, caution is advised. Newer & greenfield codebases should not be affected.
 	 */
 	useDefineForClassFields: true,
 } as const;
