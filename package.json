@@ -13,7 +13,6 @@
 		"build": "tsx script/build",
 		"schema:update": "tsx script/updateJsonDefinition",
 		"schema:generate": "tsx script/generateSchema",
-		"doc": "typedoc",
 		"lint": "biome check",
 		"format": "biome format --write",
 		"types": "tsc",
@@ -43,8 +42,6 @@
 		"json-schema-to-typescript": "15.0.4",
 		"ts-to-zod": "5.1.0",
 		"tsx": "4.21.0",
-		"typedoc": "0.28.16",
-		"typedoc-plugin-markdown": "4.9.0",
 		"zod": "4.3.5"
 	}
 }
