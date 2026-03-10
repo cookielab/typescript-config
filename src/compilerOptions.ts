@@ -46,9 +46,10 @@ const typeCheckingOptions: Pick<
 	alwaysStrict: true,
 	/**
 	 * This rule disallows usage of `undefined` as a value for attributes defined with `?`.
-	 * If the field should not be present, it should be removed with a `delete` or a new object definition.
+	 *
+	 * For many use-cases, this may be too strict. However, if an even stricter configuration is required, this option is recommended to be set to `true`.
 	 */
-	exactOptionalPropertyTypes: true,
+	exactOptionalPropertyTypes: false,
 	/**
 	 * Fall-through cases in switch can be easily left in the code as a bug.
 	 * If multiple branches share the same logic, `if-else` may be a better tool for the job.
