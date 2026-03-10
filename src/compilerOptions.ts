@@ -161,6 +161,9 @@ const moduleOptions: Pick<
 	allowUmdGlobalAccess: false,
 	/**
 	 * If this option needs to be set, it should be done by the consumer project.
+	 *
+	 * @deprecated https://devblogs.microsoft.com/typescript/announcing-typescript-6-0-rc/#deprecated:---baseurl
+	 * This option will be deprecated in TypeScript >=6.0. In preparation for this change, it will not be enabled here as well.
 	 */
 	baseUrl: null,
 	/**
