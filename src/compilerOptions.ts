@@ -626,27 +626,31 @@ const projectsOptions: Pick<
 	/**
 	 * This setting enables build-time optimizations. However, in modern scenarios, these may not be necessary.
 	 */
-	composite: false,
+	composite: true,
 	/**
 	 * This setting is only necessary when working with TypeScript projects that cannot fit into memory.
+	 *
+	 * Enable this option if your project runs into memory issues.
 	 */
 	disableReferencedProjectLoad: false,
 	/**
-	 * This setting only applies to `composite` projects.
+	 * This setting disables features like "find all references" or "jump to definition".
+	 *
+	 *  Enable this option if your project runs into memory issues.
 	 */
 	disableSolutionSearching: false,
 	/**
-	 * This setting only applies to `composite` projects.
+	 * This setting is only necessary to enable compatibility with TypeScript <3.7.
 	 */
 	disableSourceOfProjectReferenceRedirect: false,
 	/**
 	 * This setting only applies to `composite` projects.
 	 */
-	incremental: false,
+	incremental: true,
 	/**
 	 * This setting only applies to `composite` projects.
 	 */
-	tsBuildInfoFile: null,
+	tsBuildInfoFile: "node_modules/.cache/tsbuildinfo",
 } as const;
 
 const outputFormattingOptions: Pick<CompilerOptions, "noErrorTruncation" | "preserveWatchOutput" | "pretty"> = {
