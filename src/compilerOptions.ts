@@ -168,11 +168,11 @@ const moduleOptions: Pick<
 	 */
 	customConditions: null,
 	/**
-	 * ES2022 is a good modern target.
+	 * ESNext is a good modern target.
 	 *
-	 * For the uncommon cases that need this functionality, this configuration should be changed.
+	 * For the less common use-cases, this should be changed to a different appropriate value.
 	 */
-	module: "es2022",
+	module: "esnext",
 	/**
 	 * Most code these days is bundled in some way (vite, esbuild & others). `bundler` is thus selected as the default.
 	 *
@@ -561,11 +561,11 @@ const languageAndEnvironmentOptions: Pick<
 	 */
 	reactNamespace: null,
 	/**
-	 * `es2023` is a reasonable default as it is guaranteed to work in most environments.
+	 * `esnext` is used as the default value since this configuration expects to be used in the `bundler` mode.
 	 *
 	 * If required, this target can be lowered or moved up by the consumer configuration.
 	 */
-	target: "es2023",
+	target: "esnext",
 	/**
 	 * This setting unifies the behavior from TypeScript and the final specification from TC39.
 	 */
