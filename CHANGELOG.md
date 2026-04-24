@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.3](https://github.com/cookielab/typescript-configuration/compare/v0.0.1...v0.0.3) (2026-04-24)
+
+
+### Features
+
+* **compilerOptions:** change module and target editions to ESNext ([454e998](https://github.com/cookielab/typescript-configuration/commit/454e998c9286eebab693bb65963aa684ec971372))
+* **compilerOptions:** disable exactOptionalPropertyTypes for being too strict ([b58c8a7](https://github.com/cookielab/typescript-configuration/commit/b58c8a780a8c066076ae59398fa89dda696ca832))
+* **compilerOptions:** switch the configuration to composite mode ([fe38e56](https://github.com/cookielab/typescript-configuration/commit/fe38e5666a0910379390904c8f15370120226839))
+
+
+### Bug Fixes
+
+* **actions:** fix the broken check workflow definition ([2edf251](https://github.com/cookielab/typescript-configuration/commit/2edf251e0e5493295cdece5ca1a6bc64f036a461))
+* **build:** fix the order of commands in the release command ([27d8edd](https://github.com/cookielab/typescript-configuration/commit/27d8edd78598c1095fce58343abfffccbc81c750))
+
 ## 0.0.1 (2026-02-26)
 
 
