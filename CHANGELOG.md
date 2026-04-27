@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.4](https://github.com/cookielab/typescript-config/compare/v0.0.3...v0.0.4) (2026-04-27)
+
+
+### Bug Fixes
+
+* **release:** fix the repository URL in package.json to enable NPM publishing in CI/CD ([5c46c3f](https://github.com/cookielab/typescript-config/commit/5c46c3fb56c46b9fbc2929cf2e9dbf756fe348cf))
+
 ## [0.0.3](https://github.com/cookielab/typescript-configuration/compare/v0.0.1...v0.0.3) (2026-04-24)
 
 
