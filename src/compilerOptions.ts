@@ -13,6 +13,7 @@ type CompilerOptions = Omit<
 	| "watchDirectory"
 	| "listFilesOnly"
 	| "downlevelIteration"
+	| "esModuleInterop"
 	| "allowSyntheticDefaultImports"
 >;
 
@@ -397,7 +398,6 @@ const editorSupportOptions: Pick<CompilerOptions, "disableSizeLimit" | "plugins"
 const interopConstraintsOptions: Pick<
 	CompilerOptions,
 	| "erasableSyntaxOnly"
-	| "esModuleInterop"
 	| "forceConsistentCasingInFileNames"
 	| "isolatedDeclarations"
 	| "isolatedModules"
@@ -415,10 +415,6 @@ const interopConstraintsOptions: Pick<
 	 * This means that the TypeScript code can be directly run with newer versions of NodeJS.
 	 */
 	erasableSyntaxOnly: true,
-	/**
-	 * Working with non-ES6 modules is not common these days. This setting can be disabled because of this.
-	 */
-	esModuleInterop: false,
 	/**
 	 * Forces the casing in filenames to be consistent.
 	 */
