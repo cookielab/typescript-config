@@ -16,13 +16,13 @@ type CompilerOptions = Omit<
 	| "esModuleInterop"
 	| "allowSyntheticDefaultImports"
 	| "baseUrl"
+	| "alwaysStrict"
 >;
 
 const typeCheckingOptions: Pick<
 	CompilerOptions,
 	| "allowUnreachableCode"
 	| "allowUnusedLabels"
-	| "alwaysStrict"
 	| "exactOptionalPropertyTypes"
 	| "noFallthroughCasesInSwitch"
 	| "noImplicitAny"
@@ -49,10 +49,6 @@ const typeCheckingOptions: Pick<
 	 * Unused labels are more often than not just a syntactic issue.
 	 */
 	allowUnusedLabels: false,
-	/**
-	 * Forces every file to be parsed in the [ECMAScript strict mode](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Strict_mode).
-	 */
-	alwaysStrict: true,
 	/**
 	 * This rule disallows usage of `undefined` as a value for attributes defined with `?`.
 	 *
