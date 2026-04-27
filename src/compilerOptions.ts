@@ -13,6 +13,7 @@ type CompilerOptions = Omit<
 	| "watchDirectory"
 	| "listFilesOnly"
 	| "downlevelIteration"
+	| "allowSyntheticDefaultImports"
 >;
 
 const typeCheckingOptions: Pick<
@@ -395,7 +396,6 @@ const editorSupportOptions: Pick<CompilerOptions, "disableSizeLimit" | "plugins"
 
 const interopConstraintsOptions: Pick<
 	CompilerOptions,
-	| "allowSyntheticDefaultImports"
 	| "erasableSyntaxOnly"
 	| "esModuleInterop"
 	| "forceConsistentCasingInFileNames"
@@ -404,10 +404,6 @@ const interopConstraintsOptions: Pick<
 	| "preserveSymlinks"
 	| "verbatimModuleSyntax"
 > = {
-	/**
-	 * When working with default exports, this configuration prefers them to be explicit. And the same goes for grouped imports.
-	 */
-	allowSyntheticDefaultImports: false,
 	/**
 	 * This setting disables the usage of:
 	 * 1. `enum`
@@ -421,8 +417,6 @@ const interopConstraintsOptions: Pick<
 	erasableSyntaxOnly: true,
 	/**
 	 * Working with non-ES6 modules is not common these days. This setting can be disabled because of this.
-	 *
-	 * Enabling this setting would also enable `allowSyntheticDefaultImports`, which is not wanted.
 	 */
 	esModuleInterop: false,
 	/**
