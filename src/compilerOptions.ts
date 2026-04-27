@@ -644,7 +644,7 @@ const projectsOptions: Pick<
 	/**
 	 * This setting only applies to `composite` projects.
 	 */
-	tsBuildInfoFile: "node_modules/.cache/tsbuildinfo",
+	tsBuildInfoFile: "../node_modules/.cache/tsbuildinfo",
 } as const;
 
 const outputFormattingOptions: Pick<CompilerOptions, "noErrorTruncation" | "preserveWatchOutput" | "pretty"> = {
