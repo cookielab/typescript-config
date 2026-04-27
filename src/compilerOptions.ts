@@ -6,7 +6,13 @@ import type { compilerOptionsSchema } from "./generated/configuration";
 type CompilerOptions = Omit<
 	z.infer<ReturnType<typeof compilerOptionsSchema.def.left.def.right.required>>,
 	// The following properties are available in the JSON schema but TypeScript either does not allow their usage in tsconfig.json or has removed them completely.
-	"watch" | "watchFile" | "charset" | "fallbackPolling" | "watchDirectory" | "listFilesOnly"
+	| "watch"
+	| "watchFile"
+	| "charset"
+	| "fallbackPolling"
+	| "watchDirectory"
+	| "listFilesOnly"
+	| "downlevelIteration"
 >;
 
 const typeCheckingOptions: Pick<
@@ -245,7 +251,6 @@ const emitOptions: Pick<
 	| "declaration"
 	| "declarationDir"
 	| "declarationMap"
-	| "downlevelIteration"
 	| "emitBOM"
 	| "emitDeclarationOnly"
 	| "importHelpers"
@@ -282,10 +287,6 @@ const emitOptions: Pick<
 	 * If required, this option can be disabled by the consumer project. This is recommended for larger projects of >150 files.
 	 */
 	declarationMap: true,
-	/**
-	 * This option is only useful when transpiling to older versions of ECMAScript.
-	 */
-	downlevelIteration: false,
 	/**
 	 * This setting defaults to `false` anyway. However, requiring BOM to be emitted is very rare and thus the rule is disabled.
 	 */
