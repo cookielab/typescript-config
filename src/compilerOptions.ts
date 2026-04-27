@@ -17,6 +17,7 @@ type CompilerOptions = Omit<
 	| "allowSyntheticDefaultImports"
 	| "baseUrl"
 	| "alwaysStrict"
+	| "outFile"
 >;
 
 const typeCheckingOptions: Pick<
@@ -253,7 +254,6 @@ const emitOptions: Pick<
 	| "noEmitHelpers"
 	| "noEmitOnError"
 	| "outDir"
-	| "outFile"
 	| "preserveConstEnums"
 	| "removeComments"
 	| "sourceMap"
@@ -330,10 +330,6 @@ const emitOptions: Pick<
 	 * If required, this should be changed by the consumer configuration.
 	 */
 	outDir: "dist",
-	/**
-	 * Disabled in favor of `outDir`.
-	 */
-	outFile: null,
 	/**
 	 * Disabled even though enums are forbidden by this configuration.
 	 */
