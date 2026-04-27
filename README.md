@@ -17,6 +17,12 @@ The ruleset is inspired by the Tiger Style coding principles and pretty much boi
 
 As the configuration only handles `compilerOptions`, the reasoning behind each setting can be found in [compilerOptions](./src/compilerOptions.ts).
 
+## Versioning
+
+For TypeScript versions `<6.0.0`, the configuration versions of `0.0.X` are recommended. Starting with `0.1.0`, many `compilerOptions` were removed with the major release and will not be maintained in the future versions of the configuration.
+
+The `0.0.X` configuration versions will still be maintained to provide compatibility for older TypeScript versions.
+
 ## Installation
 
 First add the package as a development dependency using your package manager of choice.
