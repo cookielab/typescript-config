@@ -2,6 +2,25 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.1.0](https://github.com/cookielab/typescript-config/compare/v0.0.4...v0.1.0) (2026-04-27)
+
+
+### ⚠ BREAKING CHANGES
+
+* **typescript:** update TypeScript to version 6
+
+### Features
+
+* **compilerOptions:** fix tsbuildInfo file path to node_modules of the project ([bff3cb8](https://github.com/cookielab/typescript-config/commit/bff3cb8b361e449136eec207d2c016a333733344))
+* **compilerOptions:** remove the depreacted allowSyntheticDefaultImports option ([e23f9c3](https://github.com/cookielab/typescript-config/commit/e23f9c3e90ffee4c388f9314124b6c214dbcdcf1))
+* **compilerOptions:** remove the deprecated alwaysStrict option ([dcd5746](https://github.com/cookielab/typescript-config/commit/dcd57461e6f156f6696f8cdb5779f406c9e5194f))
+* **compilerOptions:** remove the deprecated baseUrl option ([d11d98e](https://github.com/cookielab/typescript-config/commit/d11d98eece78cb1672b05267fbeffe9a845435e1))
+* **compilerOptions:** remove the deprecated downlevelIteration option ([5142a3e](https://github.com/cookielab/typescript-config/commit/5142a3e5f959b87f5a870f51842c7e2840225a97))
+* **compilerOptions:** remove the deprecated esModuleInterop option ([75e16db](https://github.com/cookielab/typescript-config/commit/75e16db64fa6b310aabb6d7f3e35bd1f0b083c9e))
+* **compilerOptions:** remove the deprecated outFile option ([d4e87c1](https://github.com/cookielab/typescript-config/commit/d4e87c1d7b026aaea84b5760f604cc569c2a56c9))
+* **schema:** update schema to the latest version ([dd3ae86](https://github.com/cookielab/typescript-config/commit/dd3ae866da35e15af0e20e5fe89f4c1d2204c3c4))
+* **typescript:** update TypeScript to version 6 ([5045408](https://github.com/cookielab/typescript-config/commit/5045408c03c235cb392be021ffbe52cf2f22bf4b))
+
 ## [0.0.4](https://github.com/cookielab/typescript-config/compare/v0.0.3...v0.0.4) (2026-04-27)
 
 
