@@ -13,15 +13,38 @@ The ruleset is inspired by the Tiger Style coding principles and pretty much boi
    1. Explicit over implicit code
    2. Consistent code style
 
-## Documentation
+## Updating TypeScript & Configuration Versions
 
-As the configuration only handles `compilerOptions`, the reasoning behind each setting can be found in [compilerOptions](./src/compilerOptions.ts).
+### TypeScript `>=6.0.0` & Configuration `>=0.1.0`
+
+The following options were deprecated by TypeScript and will not be part of the configuration going forward:
+
+1. `downlevelIteration`
+2. `outFile`
+3. `alwaysStrict`
+4. `baseUrl`
+5. `esModuleInterop`
+6. `allowSyntheticDefaultImport`
+
+In case your `@types/*` packages are not recognized by the TypeScript compiler, they will have to be added into your `tsconfig.json`. TypeScript has stopped automatically loading every `@types/*` package [starting with version 6.0.0](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-6-0.html#types-now-defaults-to-). A simple example of registering `@types/node` would be:
+
+```json
+{
+  "compilerOptions": {
+    "types": ["node"]
+  }
+}
+```
 
 ## Versioning
 
 For TypeScript versions `<6.0.0`, the configuration versions of `0.0.X` are recommended. Starting with `0.1.0`, many `compilerOptions` were removed with the major release and will not be maintained in the future versions of the configuration.
 
 The `0.0.X` configuration versions will still be maintained to provide compatibility for older TypeScript versions.
+
+## Documentation
+
+As the configuration only handles `compilerOptions`, the reasoning behind each setting can be found in [compilerOptions](./src/compilerOptions.ts).
 
 ## Installation
 
